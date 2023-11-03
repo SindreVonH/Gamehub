@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* li, a, button{
+    font-family:"Roboto", sans-serif ;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #28282A, #08060B);
+    height: 100vh;
+    
+  }
+.logo{
+    width: 220px;
+    cursor: pointer;
+    top: 20px;
+
+}  
+.logo-container {
+    display: inline-block;
+    background-color: #6671D0;
+    border: 2px solid #6671D0;
+    border-radius: 70px; 
+    padding: 5px; 
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 4;
+    top: -18px;
+    
+    
+  }
+  @media (max-width: 720px){
+    .logo{
+        width: 130px;
+        
+    }
+
+  }
+.banner{
+    height: 65px;
+    width: 100%;
+    background-color: #9FA4D1; 
+    line-height: 71px; 
+    position: absolute;
+    top: 103px; 
+    left: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.buttons_right{
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 71px; 
+    transform: translateX(75px);
+    margin: 0 10px;
+}
+.buttons li{
+    display: inline-block;
+   
+}
+.buttons li a{
+    transition: all 0.3s ease 0s;
+    margin: 0 10px;
+}
+.buttons li a:hover{
+    color: #0088a9;
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(102, 113, 209, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin: 0 5px;
+}
+button:hover{
+    background-color: rgba(114, 126, 233, 1);
+}
+.buttons_left{
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 71px; 
+    transform: translateX(-100px);
+    margin: 0 10px;
+}
+@media (max-width: 720px){
+    .buttons_left{
+        transform: translateX(-5px);
+        margin-right: 5px
+    }
+    .buttons_right{
+        transform: translateX(-25px);
+        margin-right: 5px
+    }
+    button{
+        margin: 0 2px;
+        padding: 9px 15px;
+    }
+
+    
+
+  }
+
+
+.product-container {
+    width: 700px; /* Juster bredden etter behov */
+    height: 900px; /* Juster høyden etter behov */
+    background: linear-gradient(to bottom, #727EE9, #7B1DD9); /* Legg til ønsket bakgrunnsfarge */
+    position: absolute;
+    top: 178px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolonner */
+    gap: 20px; /* Avstand mellom kortene */
+}
+
+@media (max-width: 700px){
+    .product-grid{
+        grid-template-columns: repeat(2, 1fr);
+        top: -50px;
+    }
+    .product-container{
+        top: 208px;
+        height: 1350px;
+        width: 100%;
+    }
+
+  }
+  
+.product-card {
+    width: 160px;
+    height: 235px;
+    background-color: #202022;
+    border: 1px solid #000000;
+    color: #fff;
+   
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+   
+  }
+
+  .product-card img {
+    max-width: 100%; /* Sørger for at bildet tilpasser kortets bredde */
+    justify-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgb(122, 87, 250);
+  }
+  
+  .product-card h2 {
+    font-size: 16px; /* Størrelse på overskriften (juster etter behov) */
+    margin: 5px 0; /* Avstand over og under overskriften (juster etter behov) */
+  }
+  
+  .product-card p {
+    font-size: 10xp; /* Størrelse på teksten (juster etter behov) */
+    margin: 5px;
+    transform: translateX(-6px);
+  }
+ 
+
+
+ 
+ .fliter-container{
+    width: 700px; /* Juster bredden etter behov */
+    height: 60px; /* Juster høyden etter behov */
+    background: linear-gradient(to bottom, #727EE9, #727EE9); /* Legg til ønsket bakgrunnsfarge */
+    position: absolute;
+    top: 168px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    
+ }
+
+
+.button-style-2 {
+    background-color: #56599F;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family:"Roboto", sans-serif ;
+    font-size: 16px;
+    margin-right: 10px
+}
+.button-style-3 {
+    background-color: #343779;
+    color: #fff;
+    font-family:"Roboto", sans-serif ;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  @media (max-width: 568px){
+    .button-style-2{
+        margin-right: 5px;
+        padding: 5px 5px;
+        font-size: 10px;
+    }
+    .button-style-3{
+        margin-right: 5px;
+        padding: 5px 5px;
+        font-size: 10px;
+
+    }
+    .fliter-container{
+        width: 100%;
+    }
+  }
+
+  .background-bottom{
+    width: 100%;
+    height: 210px; /* Juster høyden etter behov */
+    background: linear-gradient(to bottom, #0B0A0E, #000000); /* Legg til ønsket bakgrunnsfarge */
+    position: absolute;
+    top: 868px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    
+ }
+ .game-container{
+    width: 700px;
+    height: 490px; /* Juster høyden etter behov */
+    opacity: 1; 
+    background: linear-gradient(to bottom, #0009E0, #00060B);
+    border-radius: 15px;
+    color: #fff;
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+ }
+ .game-box{
+    width: 700px;
+    height: 330px; /* Juster høyden etter behov */
+    background: linear-gradient(to bottom, #3F3F67, #060640);
+    border-radius: 15px;
+    display: grid;
+    position: absolute;
+    align-items: center;
+    justify-items: center;
+    top: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+ }
+ @media (max-width: 725px){
+    .game-box{
+        width: 100%;
+    }
+ .game-container{
+    width: 100%;
+    
+ }
+ .game-text-1{
+    bottom: 40%
+ }
+ .product-container{
+    width: 100%;
+}
+
+.fliter-container{
+    width: 100%;
+
+}
+}
+ .game-box img {
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgb(122, 87, 250);
+    max-width: 240px;
+    max-height: 100%;
+   
+ }
+ .game-text {
+    position: absolute;
+    bottom: 12.5%;
+    color: #fff;
+    font-family:"Roboto", sans-serif ;
+    font-size: 14px;
+    left: 5px;
+    margin: 10px; /* Optional: Add margin to adjust spacing */
+    z-index: 5;
+  }
+  .game-text-1 {
+    position: absolute;
+    bottom: 26%;
+    color: #fff;
+    font-family:"Roboto", sans-serif ;
+    left: 0;
+    margin: 10px; /* Optional: Add margin to adjust spacing */
+    z-index: 5;
+    
+  }
+  .game-text-2 {
+    position: absolute;
+    bottom: 1%;
+    color: #fff;
+    font-family:"Roboto", sans-serif ;
+    left: 0;
+    margin: 10px; /* Optional: Add margin to adjust spacing */
+    z-index: 5;
+    
+  }
+  .game-text-3 {
+    position: absolute;
+    cursor: pointer;
+    bottom: 85%;
+    color: #fff;
+    font-family:"Roboto", sans-serif ;
+    font-size: 30px;
+    right: 0;
+    margin: 10px; /* Optional: Add margin to adjust spacing */
+    z-index: 5;
+    
+  }
+  .game-text-4 {
+    position: absolute;
+    bottom: 5%;
+    color: #fff;
+    font-family:"Roboto", sans-serif ;
+    left: 0;
+    margin: 10px; /* Optional: Add margin to adjust spacing */
+    z-index: 5;
+    
+  }
+.buyandsell{ 
+    display: flex;
+    align-items: row;
+    justify-content: row;
+
+}
+.button-style-4 {
+    background: linear-gradient(to bottom, #00B33C, #057229);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family:"Roboto", sans-serif ;
+    font-size: 16px;
+    margin-right: 10px
+    
+}
+.button-style-5 {
+    background: linear-gradient(to bottom, #DE0411, #720505);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family:"Roboto", sans-serif ;
+    font-size: 16px;
+    margin-right: 10px
+}
+.h6{
+    top: 50px;
+
+}
+.contact-container {
+    width: 700px; /* Juster bredden etter behov */
+    height: 900px; /* Juster høyden etter behov */
+    background: linear-gradient(to bottom, #565faf, #6018a8); /* Legg til ønsket bakgrunnsfarge */
+    position: absolute;
+    top: 178px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    
+}
+.contact-text {
+    position: absolute;
+    color: #fff;
+    font-family:"Roboto", sans-serif ;
+    font-size: 30px;
+    z-index: 5;
+}
+.contact-text-1 {
+    position: absolute;
+    bottom: 80%;
+    color: #fff;
+    font-family:"Roboto", sans-serif ;
+    font-size: 20px;
+    left: 60px;
+    
+}
+.contact-text-2 {
+    position: absolute;
+    bottom: 75%;
+    color: #fff;
+    font-family:"Roboto", sans-serif ;
+    font-size: 20px;
+    left: 60px;
+  
+    z-index: 5;
+    
+    
+  }
+.contact-text-3 {
+    position: absolute;
+    bottom: 72%;
+    color: #fff;
+    font-family:"Roboto", sans-serif ;
+    font-size: 20px;
+    left: 60px;
+  
+    z-index: 5;
+  }
+  @media (max-width: 700px){
+    .contact-container{
+        width: 100%;
+
+  }
+}
+
+.about-container {
+    width: 700px; /* Juster bredden etter behov */
+    height: 900px; /* Juster høyden etter behov */
+    background: linear-gradient(to bottom, #565faf, #6018a8); /* Legg til ønsket bakgrunnsfarge */
+    position: absolute;
+    top: 178px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    
+}
+.about-text {
+    position: absolute;
+    color: #fff;
+    font-family:"Roboto", sans-serif ;
+    font-size: 30px;
+    z-index: 5;
+}
+.about-text-1 {
+    position: absolute;
+    bottom: 76%;
+    color: #fff;
+    font-family:"Roboto", sans-serif ;
+    font-size: 20px;
+    left: 30px;
+    
+}
+.about-text-2 {
+    position: absolute;
+    bottom: 63%;
+    color: #fff;
+    font-family:"Roboto", sans-serif ;
+    font-size: 20px;
+    left: 30px;
+  
+    z-index: 5;
+    
+    
+  }
+.about-text-3 {
+    position: absolute;
+    bottom: 48%;
+    color: #fff;
+    font-family:"Roboto", sans-serif ;
+    font-size: 20px;
+    left: 30px;
+  
+    z-index: 5;
+  }
+  .about-text-4 {
+    position: absolute;
+    bottom: 33%;
+    color: #fff;
+    font-family:"Roboto", sans-serif ;
+    font-size: 20px;
+    left: 30px;
+  
+    z-index: 5;
+  }
+  .about-text-5 {
+    position: absolute;
+    bottom: 21%;
+    color: #fff;
+    font-family:"Roboto", sans-serif ;
+    font-size: 20px;
+    left: 30px;
+  
+    z-index: 5;
+  }
+  .about-text-6 {
+    position: absolute;
+    bottom: 10%;
+    color: #fff;
+    font-family:"Roboto", sans-serif ;
+    font-size: 20px;
+    left: 30px;
+  
+    z-index: 5;
+  }
+  @media (max-width: 700px){
+    .about-container{
+        width: 100%;
+
+  }
+  .about-text-1 {
+    font-size: 15px;
+  }
+  .about-text-2 {
+    font-size: 15px;
+  }
+  .about-text-3 {
+    font-size: 15px;
+  }
+  .about-text-4 {
+    font-size: 15px;
+  }
+  .about-text-5 {
+    font-size: 15px;
+}
+  .about-text-6 {
+    font-size: 15px;
+}
+}
+.sell-container{
+    width: 700px;
+    height: 490px; /* Juster høyden etter behov */
+    opacity: 1; 
+    background: linear-gradient(to bottom, #0009E0, #00060B);
+    border-radius: 15px;
+    color: #fff;
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+ }
+ .sell-box{
+    width: 700px;
+    height: 330px; /* Juster høyden etter behov */
+    background: linear-gradient(to bottom, #3F3F67, #060640);
+    border-radius: 15px;
+    display: grid;
+    position: absolute;
+    align-items: center;
+    justify-items: center;
+    top: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+.sell-box img {
+    max-width: 240px;
+    max-height: 100%;
+   
+ }
+ .button-style-6 {
+    background: linear-gradient(to bottom, #00B33C, #057229);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family:"Roboto", sans-serif ;
+    font-size: 16px;
+    margin-right: 10px
+    
+}
+.sell-2-box{
+    width: 700px;
+    height: 330px; /* Juster høyden etter behov */
+    background: linear-gradient(to bottom, #3F3F67, #060640);
+    border-radius: 15px;
+    display: grid;
+    position: absolute;
+    align-items: center;
+    justify-items: center;
+    top: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+.sell-2-box img {
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgb(122, 87, 250);
+    max-width: 180px;
+    max-height: 100%;
+    top: 10px;
+    position: absolute;
+    
+}
+@media (max-width: 730px){
+    .sell-2-box{
+        width: 100%;
+    }
+    .sell-box{
+        width: 100%;
+    }
+}
+.sell-box-confirm{ 
+    display: flex;
+    align-items: row;
+    justify-content: row;
+    position: absolute;
+    top: 280px;
+    
+
+}
+.button-style-7 {
+    background: linear-gradient(to bottom, #00B33C, #057229);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family:"Roboto", sans-serif ;
+    font-size: 16px;
+    margin-right: 10px
+
+}
+.sell-text {
+    position: absolute;
+    bottom: 21%;
+    color: #fff;
+    font-family:"Roboto", sans-serif ;
+    font-size: 18px;
+    left: center;
+    margin: 10px; 
+    z-index: 5;
+  }
+  .sell-text-2 {
+    position: absolute;
+    bottom: 15%;
+    color: #fff;
+    font-family:"Roboto", sans-serif ;
+    font-size: 16px;
+    left: center;
+    margin: 10px; 
+    z-index: 5;
+  }
+  .sell-text-3 {
+    position: absolute;
+    bottom: 21%;
+    color: #fff;
+    font-family:"Roboto", sans-serif ;
+    font-size: 18px;
+    left: center;
+    margin: 10px; 
+    z-index: 5;
+  }
+  .sell-text-4 {
+    position: absolute;
+    bottom: 15%;
+    color: #fff;
+    font-family:"Roboto", sans-serif ;
+    font-size: 16px;
+    left: center;
+    transform: translateX(-57%);
+    margin: 10px; 
+    z-index: 5;
+  }
+  .white-line {
+    width: 100px;
+    height: 3px;
+    background-color: white;
+    z-index: 5;
+  }
