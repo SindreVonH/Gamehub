@@ -123,9 +123,9 @@ button:hover{
 
 
 .product-container {
-    width: 700px; /* Juster bredden etter behov */
-    height: 900px; /* Juster høyden etter behov */
-    background: linear-gradient(to bottom, #727EE9, #7B1DD9); /* Legg til ønsket bakgrunnsfarge */
+    width: 700px; 
+    height: 900px; 
+    background: linear-gradient(to bottom, #727EE9, #7B1DD9); 
     position: absolute;
     top: 178px;
     left: 50%;
@@ -138,8 +138,8 @@ button:hover{
 }
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 kolonner */
-    gap: 20px; /* Avstand mellom kortene */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
 }
 
 @media (max-width: 700px){
@@ -166,34 +166,42 @@ button:hover{
     padding: 5px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    font-family:"Roboto", sans-serif ;
    
   }
 
   .product-card img {
-    max-width: 100%; /* Sørger for at bildet tilpasser kortets bredde */
+    max-width: 100%; 
     justify-items: center;
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgb(122, 87, 250);
   }
   
   .product-card h2 {
-    font-size: 16px; /* Størrelse på overskriften (juster etter behov) */
-    margin: 5px 0; /* Avstand over og under overskriften (juster etter behov) */
+    font-size: 16px; 
+    margin: 5px 0; 
+    font-family:"Roboto", sans-serif ;
   }
   
   .product-card p {
-    font-size: 10xp; /* Størrelse på teksten (juster etter behov) */
+    font-size: 10xp; 
     margin: 5px;
     transform: translateX(-6px);
   }
  
+  .h2{
+    font-family:"Roboto", sans-serif ;
+  }
+  .p{
+    font-family:"Roboto", sans-serif ;
+  }
 
 
  
  .fliter-container{
-    width: 700px; /* Juster bredden etter behov */
-    height: 60px; /* Juster høyden etter behov */
-    background: linear-gradient(to bottom, #727EE9, #727EE9); /* Legg til ønsket bakgrunnsfarge */
+    width: 700px; 
+    height: 60px; 
+    background: linear-gradient(to bottom, #727EE9, #727EE9); 
     position: absolute;
     top: 168px;
     left: 50%;
@@ -248,8 +256,8 @@ button:hover{
 
   .background-bottom{
     width: 100%;
-    height: 210px; /* Juster høyden etter behov */
-    background: linear-gradient(to bottom, #0B0A0E, #000000); /* Legg til ønsket bakgrunnsfarge */
+    height: 210px; 
+    background: linear-gradient(to bottom, #0B0A0E, #000000); 
     position: absolute;
     top: 868px;
     left: 50%;
@@ -259,7 +267,7 @@ button:hover{
  }
  .game-container{
     width: 700px;
-    height: 490px; /* Juster høyden etter behov */
+    height: 490px; 
     opacity: 1; 
     background: linear-gradient(to bottom, #0009E0, #00060B);
     border-radius: 15px;
@@ -272,7 +280,7 @@ button:hover{
  }
  .game-box{
     width: 700px;
-    height: 330px; /* Juster høyden etter behov */
+    height: 330px; 
     background: linear-gradient(to bottom, #3F3F67, #060640);
     border-radius: 15px;
     display: grid;
@@ -318,7 +326,7 @@ button:hover{
     font-family:"Roboto", sans-serif ;
     font-size: 14px;
     left: 5px;
-    margin: 10px; /* Optional: Add margin to adjust spacing */
+    margin: 10px; 
     z-index: 5;
   }
   .game-text-1 {
@@ -327,7 +335,7 @@ button:hover{
     color: #fff;
     font-family:"Roboto", sans-serif ;
     left: 0;
-    margin: 10px; /* Optional: Add margin to adjust spacing */
+    margin: 10px; 
     z-index: 5;
     
   }
@@ -337,7 +345,7 @@ button:hover{
     color: #fff;
     font-family:"Roboto", sans-serif ;
     left: 0;
-    margin: 10px; /* Optional: Add margin to adjust spacing */
+    margin: 10px; 
     z-index: 5;
     
   }
@@ -349,7 +357,7 @@ button:hover{
     font-family:"Roboto", sans-serif ;
     font-size: 30px;
     right: 0;
-    margin: 10px; /* Optional: Add margin to adjust spacing */
+    margin: 10px; 
     z-index: 5;
     
   }
@@ -359,7 +367,7 @@ button:hover{
     color: #fff;
     font-family:"Roboto", sans-serif ;
     left: 0;
-    margin: 10px; /* Optional: Add margin to adjust spacing */
+    margin: 10px;
     z-index: 5;
     
   }
@@ -400,9 +408,9 @@ button:hover{
 
 }
 .contact-container {
-    width: 700px; /* Juster bredden etter behov */
-    height: 900px; /* Juster høyden etter behov */
-    background: linear-gradient(to bottom, #565faf, #6018a8); /* Legg til ønsket bakgrunnsfarge */
+    width: 700px; 
+    height: 900px; 
+    background: linear-gradient(to bottom, #565faf, #6018a8); 
     position: absolute;
     top: 178px;
     left: 50%;
@@ -458,9 +466,9 @@ button:hover{
 }
 
 .about-container {
-    width: 700px; /* Juster bredden etter behov */
-    height: 900px; /* Juster høyden etter behov */
-    background: linear-gradient(to bottom, #565faf, #6018a8); /* Legg til ønsket bakgrunnsfarge */
+    width: 700px; 
+    height: 900px;
+    background: linear-gradient(to bottom, #565faf, #6018a8); 
     position: absolute;
     top: 178px;
     left: 50%;
@@ -564,7 +572,7 @@ button:hover{
 }
 .sell-container{
     width: 700px;
-    height: 490px; /* Juster høyden etter behov */
+    height: 490px; 
     opacity: 1; 
     background: linear-gradient(to bottom, #0009E0, #00060B);
     border-radius: 15px;
@@ -577,7 +585,7 @@ button:hover{
  }
  .sell-box{
     width: 700px;
-    height: 330px; /* Juster høyden etter behov */
+    height: 330px;
     background: linear-gradient(to bottom, #3F3F67, #060640);
     border-radius: 15px;
     display: grid;
@@ -609,7 +617,7 @@ button:hover{
 }
 .sell-2-box{
     width: 700px;
-    height: 330px; /* Juster høyden etter behov */
+    height: 330px; 
     background: linear-gradient(to bottom, #3F3F67, #060640);
     border-radius: 15px;
     display: grid;
