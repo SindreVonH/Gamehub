@@ -1,34 +1,41 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12624294&assignment_repo_type=AssignmentRepo)
-# HTML & CSS Course Assignment
+# Gamehub Cross-Course Project
 
-## Brief
+![img1](https://github.com/SindreVonH/Gamehub/assets/149319539/51aafd81-8edf-4419-a85c-a04a9cfc6150)
 
-You must deliver a properly functioning, responsive website for the assignment brief you chose in Design 1.
+A fully responsive and accessible website built for the HTML & CSS course assignment, showcasing the practical application of design and development skills.
 
-The site needs to have every page listed in the site architecture on your chosen brief. Certain functionality requiring JavaScript can be mimicked; for example, a login page could link across from the ‘Sign in’ button.
+## Description
 
-- The HTML should be semantic and neat.
-- The CSS should follow the DRY principle and be easy to read.
-- The website should be responsive and look good at every screen size with no horizontal scrollbars. Use Flexbox and CSS Grids where appropriate. Please do not use a CSS framework like Bootstrap; we want to see that you can build responsive sites without the help of a framework.
-- The site should be WCAG compliant, and accessibility should be taken into account.
-- Each page should have a unique <meta name="description">, <title>, and <h1>.
-- You should not use copied code in your submission. All code submitted must be written by yourself. You may use external sources to show you how to achieve specific effects, which should be included in your report.
+This project involves creating a functional, responsive website based on the design brief chosen in Design 1. The site includes all pages listed in the site architecture and mimics certain JavaScript functionalities where needed. The focus is on semantic HTML, well-structured CSS, and ensuring the site is responsive and accessible.
 
-## Process
+Features:
 
-1. Look at your prototype and consider how the elements will move across the different devices. Which elements move where on different devices?
-2. Write your HTML and CSS, ensuring your HTML is semantic and bug-free and your CSS follows DRY principles.
-3. Use media queries, flex or grid to make your website responsive across screen sizes.
-4. Test your website using your developer tools and also test on major browsers and various devices.
-5. Validate your code using the Markup Validation Service
-6. Use the WAVE Web Accessibility Evaluation Tools to test that your site matches best practices for accessibility
-7. When your site is ready, post it on the Teams peer review channel.
-8. Look at the work of your peers and write a review for them.
-9. Make adjustments based on the feedback you gather from peers and teachers.
-10. Submit here on Teams.
+- Fully responsive design using Flexbox and CSS Grid.
+- WCAG compliant to ensure accessibility.
+- Unique meta descriptions, titles, and h1 tags for each page.
+- Mimicked JavaScript functionality for pages like buy and sell.
 
-## Delivery
+## Built With
 
-- Please include a link to your live site, deployed on Netlify or GitHub Pages in your submission.
-- Please include a link to your public GitHub repo containing your code in your submission.
-- There is no reflection for this CA.
+- HTML
+- CSS
+
+## Getting Started
+
+### Installing
+
+To get a local copy up and running follow these simple steps
+
+1. Clone the repo:
+
+```bash
+git clone git@github.com:SindreVonH/Gamehub.git
+```
+
+### Running
+
+Since this project is built with static HTML and CSS, you can open the index.html file in your browser to view the website.
+
+## Contact
+
+[My LinkedIn page](https://www.linkedin.com/in/sindre-marker-63937a215/)
